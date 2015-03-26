@@ -3,4 +3,4 @@
 ### Description
 Linear correlation analysis of brain images to detect brain activity
 
-Brain Network on [AppGallery](http://appgallery.maxeler.com/#/app/Brain%20Network) 
+Brain Network on [AppGallery](http://appgallery.maxeler.com/) 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maxCompilerManager>
+<enginePart internalEngineSubproject="BrainNetwork_EngineCode" isSrcBin="false" isUseDefaultSelected="false" outputLocation="/BrainNetwork_EngineCode/bin" projectName="BrainNetwork"/>
+<cpuPart internalCpuSubproject="BrainNetwork_CPUCode"/>
+<watchedFiles/>
+</maxCompilerManager>

@@ -1,0 +1,132 @@
+
+Total resource usage
+-----------------------------------------------------------------
+    LUTs     FFs   BRAMs    DSPs                            
+  370000  740000    2304     256  total available resources for FPGA
+   78576  133184     820     216  total resources used      
+  21.24%  18.00%  35.59%  84.38%  % of available
+   43899   78844     303     216  used by kernels           
+  11.86%  10.65%  13.15%  84.38%  % of available
+   33795   52441     504       0  used by manager           
+   9.13%   7.09%  21.88%   0.00%  % of available
+   53831  105292     715     216  stray resources           
+  14.55%  14.23%  31.03%  84.38%  % of available
+
+High level manager breakdown aggregated by type
+-----------------------------------------------------------------
+    LUTs     FFs   BRAMs    DSPs  Type                      Occurrences
+     626    1229       1       0  AddrGen                   3
+      39      37       1       0  ChecksumMappedDRP         1
+    1043     906       0       0  DualAspectMux             2
+      11    6711       0       0  DualAspectReg             4
+     444     498     270       0  Fifo                      9
+   43899   78844     303     216  Kernel                    3
+     166     216       0       0  MAX4CPLD                  1
+     781     970       2       0  MAX4PCIeSlaveInterface    1
+      34      54       0       0  MAXEvents                 1
+     555      86       0       0  MappedElementSwitch       1
+     427    1018       5       0  MappedMemoriesController  1
+     126     131       0       0  MappedRegistersControlle  1
+    6788   15472     136       0  MemoryControllerPro       1
+    1666     950       4       0  PCIeBase                  1
+    3466    5525      40       0  PCIeStreaming             1
+     274     399       0       0  PerfMonitor               1
+      16      24       0       0  ResetControl              2
+      88     186       0       0  SanityBlock               1
+      91      89       0       0  SignalForwardingAdapter   1
+   17149   17939      45       0  StratixVDDR3              3
+       5       1       0       0  StreamPullPushAdapter     1
+       0       0       0       0  Memory Controller         --
+       0       0       0       0  Other InterFPGA           --
+    1123    1326       8       0  Other MappedElements      --
+    4807    7677      48       0  Other PCIe                --
+
+Kernel breakdown
+-----------------------------------------------------------------
+    LUTs     FFs   BRAMs    DSPs  category
+   43899   78844     303     216  total for all kernels
+  11.86%  10.65%  13.15%  84.38%  % of total available
+
+Totals for each kernel
+    LUTs     FFs   BRAMs    DSPs  Kernel name
+    2052    4304      26       0  ColumnMemoryControllerKernel (total)
+   0.55%   0.58%   1.13%   0.00%  % of total available
+    1934    3705      23       0  ColumnMemoryControllerKernel (user)
+   0.52%   0.50%   1.00%   0.00%  % of total available
+      32     194       3       0  ColumnMemoryControllerKernel (scheduling)
+   0.01%   0.03%   0.13%   0.00%  % of total available
+      86     405       0       0  ColumnMemoryControllerKernel (other Kernel resources)
+   0.02%   0.05%   0.00%   0.00%  % of total available
+   18278   22968     224       0  CompressorBufferKernel (total)
+   4.94%   3.10%   9.72%   0.00%  % of total available
+   15260   14030       0       0  CompressorBufferKernel (user)
+   4.12%   1.90%   0.00%   0.00%  % of total available
+    2536    7017     224       0  CompressorBufferKernel (scheduling)
+   0.69%   0.95%   9.72%   0.00%  % of total available
+     482    1921       0       0  CompressorBufferKernel (other Kernel resources)
+   0.13%   0.26%   0.00%   0.00%  % of total available
+   23569   51572      53     216  LinearCorrelationKernel (total)
+   6.37%   6.97%   2.30%  84.38%  % of total available
+   22511   47830       0     216  LinearCorrelationKernel (user)
+   6.08%   6.46%   0.00%  84.38%  % of total available
+     701    1850      53       0  LinearCorrelationKernel (scheduling)
+   0.19%   0.25%   2.30%   0.00%  % of total available
+     357    1892       0       0  LinearCorrelationKernel (other Kernel resources)
+   0.10%   0.26%   0.00%   0.00%  % of total available
+
+
+Manager breakdown
+-----------------------------------------------------------------
+    LUTs     FFs   BRAMs    DSPs  Type                      Instance
+    2052    4304      26       0  Kernel                    ColumnMemoryControllerKernel
+   18278   22968     224       0  Kernel                    CompressorBufferKernel
+   23569   51572      53     216  Kernel                    LinearCorrelationKernel
+       2    2416       0       0  DualAspectReg             Stream_21
+       2    2465       0       0  DualAspectReg             Stream_22
+      41      35       1       0  Fifo                      Stream_24
+      41      39      29       0  Fifo                      Stream_26
+      41      35       1       0  Fifo                      Stream_28
+       2    1154       0       0  DualAspectReg             Stream_34
+     266     134       0       0  DualAspectMux             Stream_43
+      79     128       4       0  Fifo                      Stream_45
+       5       1       0       0  StreamPullPushAdapter     Stream_47
+      44      34      72       0  Fifo                      Stream_51
+      44      35      72       0  Fifo                      Stream_55
+      77     125       4       0  Fifo                      Stream_59
+       5     676       0       0  DualAspectReg             Stream_5
+      40      33      29       0  Fifo                      Stream_61
+     777     772       0       0  DualAspectMux             Stream_63
+      37      34      58       0  Fifo                      Stream_65
+     226     407       0       0  AddrGen                   addrgen_read_controller
+     193     409       0       0  AddrGen                   addrgen_row_memory_controller
+     207     413       1       0  AddrGen                   addrgen_write_controller
+     781     970       2       0  MAX4PCIeSlaveInterface    MAX4PCIeSlaveInterface_i
+       8      13       0       0  ResetControl              control_streams_rst_ctl
+     555      86       0       0  MappedElementSwitch       MappedElementSwitch_i
+     427    1018       5       0  MappedMemoriesController  MappedMemoriesController_i
+     126     131       0       0  MappedRegistersControlle  MappedRegistersController_i
+     274     399       0       0  PerfMonitor               perfm
+      88     186       0       0  SanityBlock               SanityBlock_i
+      91      89       0       0  SignalForwardingAdapter   SignalForwardingAdapter_i
+      39      37       1       0  ChecksumMappedDRP         checksum_mem_drp
+    3466    5525      40       0  PCIeStreaming             dynpcie
+       8      11       0       0  ResetControl              reset_controller
+    6788   15472     136       0  MemoryControllerPro       memctrlpro_galava_sodimms
+    1666     950       4       0  PCIeBase                  PCIeBase_i
+     166     216       0       0  MAX4CPLD                  cpld_io_ext_inst
+      34      54       0       0  MAXEvents                 max_events
+    5703    5973      15       0  StratixVDDR3              ddr3_core
+    5707    6001      15       0  StratixVDDR3              ddr3_core
+    5739    5965      15       0  StratixVDDR3              ddr3_core
+
+Source files annotation report
+-----------------------------------------------------------------
+
+% of total used for each file (note: multiple files may share the same resources)
+    LUTs     FFs   BRAMs    DSPs  filename
+  54.69%  56.03%  36.95% 100.00%  com/maxeler/publicdemos/brainnetwork/BrainNetworkBuilder.java
+  50.53%  49.23%   2.80% 100.00%  com/maxeler/publicdemos/brainnetwork/BrainNetworkManager.java
+   2.16%   2.51%   2.80%   0.00%  com/maxeler/publicdemos/brainnetwork/ColumnMemoryControllerKernel.java
+  19.12%  10.25%   0.00%   0.00%  com/maxeler/publicdemos/brainnetwork/CompressorBufferKernel.java
+  28.35%  35.63%   0.00% 100.00%  com/maxeler/publicdemos/brainnetwork/LinearCorrelationKernel.java
+  54.69%  56.03%  36.95% 100.00%  [ missing source files ]

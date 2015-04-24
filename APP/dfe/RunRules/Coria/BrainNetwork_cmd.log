@@ -1,0 +1,197 @@
+Apache Ant version 1.6.0 compiled on December 18 2003
+Buildfile: BrainNetwork.xml
+Detected Java version: 1.4 in: /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.65.x86_64/jre
+Detected OS: Linux
+parsing buildfile /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork.xml with URI = file:///home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork.xml
+Project base dir set to: /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/EngineCode
+ [property] Loading Environment env.
+Property ${-*-command-variables-*-} has not been set
+Property ${env.MAXCOMPILERJCP} has not been set
+Build sequence for target `run' is [build, run]
+Complete build sequence is [build, run, help, clean, all, jar, ]
+
+build:
+      [ant] calling target [default] in build file /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork_Build.xml
+parsing buildfile /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork_Build.xml with URI = file:///home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork_Build.xml
+Project base dir set to: /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/EngineCode
+ [property] Loading Environment env.
+Property ${-*-command-variables-*-} has not been set
+Property ${env.MAXCOMPILERJCP} has not been set
+      [ant] Entering /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork_Build.xml...
+Build sequence for target `all' is [clean, build, all]
+Complete build sequence is [clean, build, all, ]
+
+clean:
+
+build:
+    [mkdir] Created dir: /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/dist
+    [mkdir] Created dir: /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/dist/bin
+
+
+[maxjcompiler] Compiling to folder /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/dist/bin
+
+[maxjcompiler] Compiling files and folders:
+[maxjcompiler] /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/EngineCode/src
+
+[maxjcompiler] Compiler options:
+[maxjcompiler] -noExit
+[maxjcompiler] -classpath
+[maxjcompiler] /network-raid/opt/maxcompiler-2014.2/lib/MaxCompiler.jar:/network-raid/opt/maxq/maxq-ctl.jar
+[maxjcompiler] -d
+[maxjcompiler] /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/dist/bin
+
+all:
+      [ant] Exiting /home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork_Build.xml.
+
+run:
+     [java] Executing '/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.65.x86_64/jre/bin/java' with arguments:
+     [java] '-Xmx2048m'
+     [java] '-classpath'
+     [java] '/home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/dist/bin:/network-raid/opt/maxcompiler-2014.2/lib/MaxCompiler.jar:/network-raid/opt/maxq/maxq-ctl.jar'
+     [java] 'com.maxeler.publicdemos.brainnetwork.BrainNetworkBuilder'
+     [java] 
+     [java] The ' characters around the executable and arguments are
+     [java] not part of the command.
+     [java] Setting environment variable: MAXSOURCEDIRS=/home/kate/publicdemos/BrainNetwork/current/src/dfe/EngineCode/src
+     [java] Wed 14:10: MaxCompiler version: 2014.2
+     [java] Wed 14:10: Build "BrainNetwork" start time: Wed Apr 22 14:10:45 BST 2015
+     [java] Wed 14:10: Main build process running as user imilankovic on host nxws26.office.maxeler.com
+     [java] Wed 14:10: Build location: /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30
+     [java] Wed 14:10: Detailed build log available in "_build.log"
+     [java] Wed 14:10: 
+     [java] Wed 14:10: ENGINE BUILD PARAMETERS
+     [java] Wed 14:10: 	     Build name: BrainNetwork_p12_DFE_f200_ce3_CORIA_w30
+     [java] Wed 14:10: 	       DFEModel: CORIA                                  
+     [java] Wed 14:10: 	    maxFileName: BrainNetwork                           
+     [java] Wed 14:10: 	         target: DFE                                    
+     [java] Wed 14:10: 	     enableMPCX: false                                  
+     [java] Wed 14:10: 	       numPipes: 12                                     
+     [java] Wed 14:10: 	      frequency: 200                                    
+     [java] Wed 14:10: 	         window: 30                                     
+     [java] Wed 14:10: 	       simulate: false                                  
+     [java] Wed 14:10: 	      enableECC: false                                  
+     [java] Wed 14:10: 	ceNumPartitions: 3                                      
+     [java] Wed 14:10: 	         suffix:                                        
+     [java] Wed 14:10: Instantiating kernel "ColumnMemoryControllerKernel"
+     [java] Wed 14:10: Instantiating kernel "LinearCorrelationKernel"
+     [java] Wed 14:10: WARNING: Floating-point casts ignore set rounding mode and use TONEAREVEN rounding only.
+     [java] Wed 14:10: Instantiating kernel "CompressorBufferKernel"
+     [java] Wed 14:10: 
+     [java] Wed 14:10: ENGINE BUILD PARAMETERS
+     [java] Wed 14:10: 	     Build name: BrainNetwork_p12_DFE_f200_ce3_CORIA_w30
+     [java] Wed 14:10: 	       DFEModel: CORIA                                  
+     [java] Wed 14:10: 	    maxFileName: BrainNetwork                           
+     [java] Wed 14:10: 	         target: DFE                                    
+     [java] Wed 14:10: 	     enableMPCX: false                                  
+     [java] Wed 14:10: 	       numPipes: 12                                     
+     [java] Wed 14:10: 	      frequency: 200                                    
+     [java] Wed 14:10: 	         window: 30                                     
+     [java] Wed 14:10: 	       simulate: false                                  
+     [java] Wed 14:10: 	      enableECC: false                                  
+     [java] Wed 14:10: 	ceNumPartitions: 3                                      
+     [java] Wed 14:10: 	         suffix:                                        
+     [java] Wed 14:10: WARNING: Transitioning from non-multiple stream widths 1152 to 1536 via a stream of width 4608 is suboptimal for performance and resource utilization.  Use Manager.setAllowNonMultipleTransitions(true) or config.setAllowNonMultipleTransitions(true) (in a CustomManager) to allow such transitions.
+     [java] Wed 14:10: WARNING: Source='CompressorBufferKernel.burst_to_memory' Sink='burst_to_memory.burst_to_memory'
+     [java] Wed 14:10: 
+     [java] Wed 14:10: Compiling kernel "ColumnMemoryControllerKernel"
+     [java] Wed 14:10: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+     [java] Wed 14:10: WARNING: Unconnected elements in design 'ColumnMemoryControllerKernel'
+     [java] Wed 14:10: WARNING: details in : /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/scratch/ColumnMemoryControllerKernel_graph_warnings.txt
+     [java] Wed 14:10: 
+     [java] Wed 14:10: Compiling kernel "LinearCorrelationKernel"
+     [java] Wed 14:10: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+     [java] Wed 14:10: WARNING: Unconnected elements in design 'LinearCorrelationKernel'
+     [java] Wed 14:10: WARNING: details in : /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/scratch/LinearCorrelationKernel_graph_warnings.txt
+     [java] Wed 14:10: WARNING: Warning (MULTIPLY_ADD_EXTRACTION):
+     [java] Wed 14:10: WARNING: MaxCompiler has detected and optimized one or more multiply add trees. These
+     [java] Wed 14:10: WARNING: optimizations reduce the amount of rounding that takes place. This will improve
+     [java] Wed 14:10: WARNING: precision but may mean that the output of this bitstream is not bit-identical
+     [java] Wed 14:10: WARNING: to that of a similar bitstream.
+     [java] Wed 14:11: WARNING: Warning (CONSTANT_ENCODING):
+     [java] Wed 14:11: WARNING: Precision loss occurred in some constant values.
+     [java] Wed 14:11: WARNING: For details see /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/scratch/LinearCorrelationKernel_constants_report.txt
+     [java] Wed 14:11: 
+     [java] Wed 14:11: Compiling kernel "CompressorBufferKernel"
+     [java] Wed 14:11: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+     [java] Wed 14:11: WARNING: Unconnected elements in design 'CompressorBufferKernel'
+     [java] Wed 14:11: WARNING: details in : /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/scratch/CompressorBufferKernel_graph_warnings.txt
+     [java] Wed 14:12: Generating input files (VHDL, netlists, MegaWizard/CoreGen)
+     [java] Wed 14:12: Running back-end  build (16 phases)
+     [java] Wed 14:12: (1/16) - Prepare MaxFile Data (GenerateMaxFileDataFile)
+     [java] Wed 14:12: (2/16) - Prepare for Placement (QuartusMap)
+     [java] Wed 14:39: (3/16) - Generate Incremental Netlist (QuartusCdb)
+     [java] Wed 14:43: (4/16) - Generate Resource Report (AlteraResourceUsageBuildPass)
+     [java] Wed 14:43: (5/16) - Generate Annotated Source Code (AlteraResourceAnnotationBuildPass)
+     [java] Wed 14:43: ERROR: Not enough lines in "/home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/src/com/maxeler/publicdemos/brainnetwork/BrainNetworkBuilder.java" for annotation. Using incorrect MaxCompilerDesignData.dat or source files?
+     [java] Wed 14:43: ERROR: Error annotating source files.
+     [java] Wed 14:43: ERROR: Build pass 'Generate Annotated Source Code' failed.
+     [java] Wed 14:43: (6/16) - Analyse Resource Usage (AlteraResourceCounterPass)
+     [java] Wed 14:43: 
+     [java] Wed 14:43: About to start chip vendor Map/Place/Route toolflow. This will take some time.
+     [java] Wed 14:43: For this compile, we estimate this process may take up to 1 hour.
+     [java] Wed 14:43: We recommend running in simulation to verify correctness before building hardware.
+     [java] Wed 14:43: 
+     [java] Wed 14:43: PRELIMINARY RESOURCE USAGE
+     [java] Wed 14:43: Logic utilization:      96857 / 172600   (56.12%)
+     [java] Wed 14:43: Multipliers (18x18):      432 / 3180     (13.58%)
+     [java] Wed 14:43: Block memory (bits): 12424455 / 41246720 (30.12%)
+     [java] Wed 14:43: 
+     [java] Wed 14:43: (7/16) - Place and Route DFE (AlteraMPPR)
+     [java] Wed 14:43: Executing MPPR with 1 cost table and 1 thread.
+     [java] Wed 14:43: MPPR: Starting 1 cost table
+     [java] Wed 16:38: MPPR: Cost table 1 met timing with score 0 (best score 0)
+     [java] Wed 16:38: (8/16) - Generate Configuration (QuartusAsm)
+     [java] Wed 16:42: (9/16) - Convert Programming File (QuartusCpf)
+     [java] Wed 16:43: (10/16) - Update Checksum (UpdateChecksumBuildPass)
+     [java] Wed 16:43: (11/16) - Generate Incremental Netlist (QuartusCdb)
+     [java] Wed 16:45: (12/16) - Generate Configuration (QuartusAsm)
+     [java] Wed 16:49: (13/16) - Convert Programming File (QuartusCpf)
+     [java] Wed 16:49: (14/16) - Generate Resource Report (AlteraResourceUsageBuildPass)
+     [java] Wed 16:50: (15/16) - Generate Annotated Source Code (AlteraResourceAnnotationBuildPass)
+     [java] Wed 16:50: ERROR: Not enough lines in "/home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/src/com/maxeler/publicdemos/brainnetwork/BrainNetworkBuilder.java" for annotation. Using incorrect MaxCompilerDesignData.dat or source files?
+     [java] Wed 16:50: ERROR: Error annotating source files.
+     [java] Wed 16:50: ERROR: Build pass 'Generate Annotated Source Code' failed.
+     [java] Wed 16:50: (16/16) - Generate MaxFile (GenerateMaxFileAltera)
+     [java] Wed 16:50: 
+     [java] Wed 16:50: FINAL RESOURCE USAGE
+     [java] Wed 16:50: Logic utilization:    79459 / 172600 (46.04%)
+     [java] Wed 16:50:   Primary FFs:       145282 / 345200 (42.09%)
+     [java] Wed 16:50:   Secondary FFs:       7462 / 345200 (2.16%)
+     [java] Wed 16:50: Multipliers (18x18):    432 / 3180   (13.58%)
+     [java] Wed 16:50:   DSP blocks:           216 / 1590   (13.58%)
+     [java] Wed 16:50: Block memory (M20K):   1014 / 2014   (50.35%)
+     [java] Wed 16:50: 
+     [java] Wed 16:50: MaxFile: /home/imilankovic/builds/22-04-15/BrainNetwork_p12_DFE_f200_ce3_CORIA_w30/results/BrainNetwork.max (MD5Sum: 01fd24a5017e55194396dd067c273610)
+     [java] Wed 16:50: ERROR: Terminating build as some build passes did not run successfully.
+     [java] Wed 16:50: ERROR: ----------------------------
+     [java] Wed 16:50: ERROR: Exception in thread "main":
+     [java] Wed 16:50: ERROR:  
+     [java] Wed 16:50: ERROR:   2 build passes failed.
+     [java] Wed 16:50: ERROR: 
+     [java] Wed 16:50: ERROR: Exception Stack Trace com.maxeler.maxdc.MaxDCException: 
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxdc.BuildManager.finalizeBuild(BuildManager.java:1731)
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxdc.BuildManager.build(BuildManager.java:1590)
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxcompiler.v2.managers.DFEManager.runBuild(DFEManager.java:383)
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxcompiler.v2.managers._Managers.runBuild(_Managers.java:16)
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxcompiler.v2.managers.custom.CustomManager.realBuild(CustomManager.java:1473)
+     [java] Wed 16:50: ERROR:    at com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:361)
+     [java] Wed 16:50: ERROR:    at com.maxeler.publicdemos.brainnetwork.BrainNetworkBuilder.main(BrainNetworkBuilder.java:47)
+     [java] Wed 16:50: ERROR: ----------------------------
+
+
+
+BUILD FAILED
+/home/imilankovic/AppGalery/BrainNetwork/APP/dfe/RunRules/Coria/BrainNetwork.xml:22: Java returned: 1
+	at org.apache.tools.ant.taskdefs.Java.execute(Java.java:118)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:306)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1094)
+	at org.apache.tools.ant.Main.runBuild(Main.java:669)
+	at org.apache.tools.ant.Main.startAnt(Main.java:220)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:215)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:90)
+
+Total time: 159 minutes 23 seconds

@@ -7,16 +7,16 @@ This App implements a linear correlation analysis of brain images to detect brai
 
 ###Contents
 The distribution root directory (this directory) initially contains the
-following items:
-  APP/
-        Sources
-  DOCS/
-        Documentation
-  PLATFORMS/
-        Binary files (executables), brain images data, libraries and scripts for different platforms (Coria, Maia, Vectis and Simulation)
-  LICENSE.txt
-        License
-  README.md
-       This file
+following items:  
+  APP/  
+        Sources  
+  DOCS/  
+        Documentation  
+  PLATFORMS/  
+        Binary files (executables), brain images data, libraries and scripts for different platforms (Coria, Maia, Vectis and Simulation)  
+  LICENSE.txt  
+        License  
+  README.md  
+       This file  
 
-Brain Network on [AppGallery](http://appgallery.maxeler.com/) 
+Brain Network on [AppGallery](http://appgallery.maxeler.com/)   

@@ -20,7 +20,7 @@ case, the following command before compilation:
 
 ## install  
 
-Compiles and installs all binaries (to bin/) and libraries (to lib/)  
+Compiles and installs all binaries (to **bin/**) and libraries (to **lib/**)  
 
 ## clean  
 

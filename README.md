@@ -26,5 +26,32 @@ Documentation of the project.
 
 License of the project.
 
+# Information to compile
+
+Ensure the environment variables below are correctly set:
+  * `MAXELEROSDIR`
+  * `MAXCOMPILERDIR`
+
+To compile the application, run:
+
+    make RUNRULE="<ProfileName>"
+
+If would like to remove the distributed maxfiles before recompiling the application run the following command before compilation:
+
+    make RUNRULE="<ProfileName>" distclean
+
+# Makefile targets
+
+## build  
+
+Compiles the application
+
+## clean  
+
+Removes results of compilation from build directories  
+
+## distclean  
+
+Removes all results of comakempilation from build directories, including all maxfiles
 
 Brain Network on [AppGallery](http://appgallery.maxeler.com/)   

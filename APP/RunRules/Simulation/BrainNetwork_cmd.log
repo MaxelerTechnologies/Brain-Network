@@ -1,0 +1,145 @@
+Apache Ant version 1.6.0 compiled on December 18 2003
+Buildfile: BrainNetwork.xml
+Detected Java version: 1.4 in: /network-raid/opt/jdk1.6.0_02/jre
+Detected OS: Linux
+parsing buildfile /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork.xml with URI = file:///home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork.xml
+Project base dir set to: /home/imilankovic/Downloads/Brain-Network/APP/EngineCode
+ [property] Loading Environment env.
+Property ${-*-command-variables-*-} has not been set
+Property ${env.MAXCOMPILERJCP} has not been set
+Build sequence for target `run' is [build, run]
+Complete build sequence is [build, run, help, runresult, clean, all, jar, ]
+
+build:
+      [ant] calling target [default] in build file /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork_Build.xml
+parsing buildfile /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork_Build.xml with URI = file:///home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork_Build.xml
+Project base dir set to: /home/imilankovic/Downloads/Brain-Network/APP/EngineCode
+ [property] Loading Environment env.
+Property ${-*-command-variables-*-} has not been set
+Property ${env.MAXCOMPILERJCP} has not been set
+      [ant] Entering /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork_Build.xml...
+Build sequence for target `all' is [clean, build, all]
+Complete build sequence is [clean, build, all, ]
+
+clean:
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/BrainNetworkParams.class
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/BrainNetworkManager.class
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/LinearCorrelationKernel.class
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/ColumnMemoryControllerKernel.class
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/BrainNetworkBuilder.class
+   [delete] Deleting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork/CompressorBufferKernel.class
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos/brainnetwork
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler/publicdemos
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com/maxeler
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin/com
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin
+   [delete] Deleting directory /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist
+
+build:
+    [mkdir] Created dir: /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist
+    [mkdir] Created dir: /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin
+
+
+[maxjcompiler] Compiling to folder /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin
+
+[maxjcompiler] Compiling files and folders:
+[maxjcompiler] /home/imilankovic/Downloads/Brain-Network/APP/EngineCode/src
+
+[maxjcompiler] Compiler options:
+[maxjcompiler] -noExit
+[maxjcompiler] -classpath
+[maxjcompiler] /network-raid/opt/maxcompiler-2014.2/lib/MaxCompiler.jar:/network-raid/opt/maxq/maxq-ctl.jar:/network-raid/opt/maxq2/maxq2-latest/maxq2.jar:/network-raid/opt/antlr-3.3/antlr-3.3-complete.jar
+[maxjcompiler] -d
+[maxjcompiler] /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin
+
+all:
+      [ant] Exiting /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/BrainNetwork_Build.xml.
+
+run:
+     [java] Executing '/network-raid/opt/jdk1.6.0_02/jre/bin/java' with arguments:
+     [java] '-Xmx2048m'
+     [java] '-classpath'
+     [java] '/network-raid/opt/maxq/maxq-ctl.jar:/home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/dist/bin:/network-raid/opt/maxcompiler-2014.2/lib/MaxCompiler.jar:/network-raid/opt/maxq2/maxq2-latest/maxq2.jar:/network-raid/opt/antlr-3.3/antlr-3.3-complete.jar'
+     [java] 'com.maxeler.publicdemos.brainnetwork.BrainNetworkBuilder'
+     [java] 
+     [java] The ' characters around the executable and arguments are
+     [java] not part of the command.
+     [java] Setting environment variable: MAXSOURCEDIRS=src
+     [java] Thu 19:46: MaxCompiler version: 2014.2
+     [java] Thu 19:46: Build "BrainNetwork" start time: Thu May 07 19:46:09 BST 2015
+     [java] Thu 19:46: Main build process running as user imilankovic on host nxws17.office.maxeler.com
+     [java] Thu 19:46: Build location: /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+     [java] Thu 19:46: Detailed build log available in "_build.log"
+     [java] Thu 19:46: 
+     [java] Thu 19:46: ENGINE BUILD PARAMETERS
+     [java] Thu 19:46: 	     Build name: BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+     [java] Thu 19:46: 	       DFEModel: VECTIS                                     
+     [java] Thu 19:46: 	    maxFileName: BrainNetwork                               
+     [java] Thu 19:46: 	         target: DFE_SIM                                    
+     [java] Thu 19:46: 	     enableMPCX: false                                      
+     [java] Thu 19:46: 	       numPipes: 8                                          
+     [java] Thu 19:46: 	      frequency: 150                                        
+     [java] Thu 19:46: 	         window: 30                                         
+     [java] Thu 19:46: 	       simulate: false                                      
+     [java] Thu 19:46: 	      enableECC: false                                      
+     [java] Thu 19:46: 	ceNumPartitions: 3                                          
+     [java] Thu 19:46: 	         suffix:                                            
+     [java] Thu 19:46: Instantiating kernel "ColumnMemoryControllerKernel"
+     [java] Thu 19:46: Instantiating kernel "LinearCorrelationKernel"
+     [java] Thu 19:46: WARNING: Floating-point casts ignore set rounding mode and use TONEAREVEN rounding only.
+     [java] Thu 19:46: Instantiating kernel "CompressorBufferKernel"
+     [java] Thu 19:46: 
+     [java] Thu 19:46: ENGINE BUILD PARAMETERS
+     [java] Thu 19:46: 	     Build name: BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+     [java] Thu 19:46: 	       DFEModel: VECTIS                                     
+     [java] Thu 19:46: 	    maxFileName: BrainNetwork                               
+     [java] Thu 19:46: 	         target: DFE_SIM                                    
+     [java] Thu 19:46: 	     enableMPCX: false                                      
+     [java] Thu 19:46: 	       numPipes: 8                                          
+     [java] Thu 19:46: 	      frequency: 150                                        
+     [java] Thu 19:46: 	         window: 30                                         
+     [java] Thu 19:46: 	       simulate: false                                      
+     [java] Thu 19:46: 	      enableECC: false                                      
+     [java] Thu 19:46: 	ceNumPartitions: 3                                          
+     [java] Thu 19:46: 	         suffix:                                            
+     [java] Thu 19:46: 
+     [java] Thu 19:46: Compiling kernel "ColumnMemoryControllerKernel"
+     [java] Thu 19:46: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+     [java] Thu 19:46: WARNING: Unconnected elements in design 'ColumnMemoryControllerKernel'
+     [java] Thu 19:46: WARNING: details in : /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/ColumnMemoryControllerKernel_graph_warnings.txt
+     [java] Thu 19:46: 
+     [java] Thu 19:46: Compiling kernel "LinearCorrelationKernel"
+     [java] Thu 19:46: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+     [java] Thu 19:46: WARNING: Unconnected elements in design 'LinearCorrelationKernel'
+     [java] Thu 19:46: WARNING: details in : /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/LinearCorrelationKernel_graph_warnings.txt
+     [java] Thu 19:46: WARNING: Warning (MULTIPLY_ADD_EXTRACTION):
+     [java] Thu 19:46: WARNING: MaxCompiler has detected and optimized one or more multiply add trees. These
+     [java] Thu 19:46: WARNING: optimizations reduce the amount of rounding that takes place. This may mean
+     [java] Thu 19:46: WARNING: that the output of this bitstream is not bit-identical to that of a similar
+     [java] Thu 19:46: WARNING: bitstream.
+     [java] Thu 19:46: WARNING: Warning (CONSTANT_ENCODING):
+     [java] Thu 19:46: WARNING: Precision loss occurred in some constant values.
+     [java] Thu 19:46: WARNING: For details see /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/LinearCorrelationKernel_constants_report.txt
+     [java] Thu 19:46: 
+     [java] Thu 19:46: Compiling kernel "CompressorBufferKernel"
+     [java] Thu 19:46: Running back-end simulation build (3 phases)
+     [java] Thu 19:46: (1/3) - Prepare MaxFile Data (GenerateMaxFileDataFile)
+     [java] Thu 19:46: (2/3) - Compile Simulation Modules (SimCompilePass)
+     [java] Thu 19:47: (3/3) - Generate MaxFile (AddSimObjectToMaxFilePass)
+     [java] Thu 19:47: MaxFile: /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/results/BrainNetwork.max (MD5Sum: 655ee4a4e587c316b550dad798133ad5)
+     [java] Thu 19:47: Build completed: Thu May 07 19:47:12 BST 2015 (took 1 min, 3 secs)
+
+
+     [exec] Current OS is Linux
+     [exec] Executing '/network-raid/opt/maxcompiler-2014.2/lib/MaxIDE/copyBuildResults.sh' with arguments:
+     [exec] '-p'
+     [exec] 'Simulation'
+     [exec] 
+     [exec] The ' characters around the executable and arguments are
+     [exec] not part of the command.
+
+
+
+BUILD SUCCESSFUL
+Total time: 1 minute 6 seconds

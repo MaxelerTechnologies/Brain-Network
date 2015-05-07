@@ -1,0 +1,112 @@
+Thu 19:40: ########################################## 
+Thu 19:40: Compiling.
+Thu 19:40: ########################################## 
+
+Thu 19:40: MaxCompiler version: 2014.2a.
+Thu 19:40: Build Simulation run rule for BrainNetwork start time: Thu May 07 19:40:00 BST 2015.
+Thu 19:40: Project location: /home/imilankovic/Downloads/Brain-Network/APP.
+Thu 19:40: Detailed build log: /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/build.log.
+
+Thu 19:40: Compiling Engine Code.
+Thu 19:40: Building BrainNetwork.max file. 
+Thu 19:40: Setting environment variable:
+Thu 19:40: MAXCOMPILER_BUILD_DIR : /network-scratch/imilankovic/maxdc_builds/
+Thu 19:40: MAX_BUILDPARAMS : DFEModel='VECTIS' target='DFE_SIM' maxFileName='BrainNetwork'  
+Thu 19:40: Building output:
+Thu 19:40: MaxCompiler version: 2014.2a
+Thu 19:40: Build "BrainNetwork" start time: Thu May 07 19:40:01 BST 2015
+Thu 19:40: Main build process running as user imilankovic on host nxws17.office.maxeler.com
+Thu 19:40: Build location: /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+Thu 19:40: Detailed build log available in "_build.log"
+Thu 19:40: 
+Thu 19:40: ENGINE BUILD PARAMETERS
+Thu 19:40: 	     Build name: BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+Thu 19:40: 	       DFEModel: VECTIS                                     
+Thu 19:40: 	    maxFileName: BrainNetwork                               
+Thu 19:40: 	         target: DFE_SIM                                    
+Thu 19:40: 	     enableMPCX: false                                      
+Thu 19:40: 	       numPipes: 8                                          
+Thu 19:40: 	      frequency: 150                                        
+Thu 19:40: 	         window: 30                                         
+Thu 19:40: 	       simulate: false                                      
+Thu 19:40: 	      enableECC: false                                      
+Thu 19:40: 	ceNumPartitions: 3                                          
+Thu 19:40: 	         suffix:                                            
+Thu 19:40: Instantiating kernel "ColumnMemoryControllerKernel"
+Thu 19:40: Instantiating kernel "LinearCorrelationKernel"
+Thu 19:40: WARNING: Floating-point casts ignore set rounding mode and use TONEAREVEN rounding only.
+Thu 19:40: Instantiating kernel "CompressorBufferKernel"
+Thu 19:40: 
+Thu 19:40: ENGINE BUILD PARAMETERS
+Thu 19:40: 	     Build name: BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30
+Thu 19:40: 	       DFEModel: VECTIS                                     
+Thu 19:40: 	    maxFileName: BrainNetwork                               
+Thu 19:40: 	         target: DFE_SIM                                    
+Thu 19:40: 	     enableMPCX: false                                      
+Thu 19:40: 	       numPipes: 8                                          
+Thu 19:40: 	      frequency: 150                                        
+Thu 19:40: 	         window: 30                                         
+Thu 19:40: 	       simulate: false                                      
+Thu 19:40: 	      enableECC: false                                      
+Thu 19:40: 	ceNumPartitions: 3                                          
+Thu 19:40: 	         suffix:                                            
+Thu 19:40: 
+Thu 19:40: Compiling kernel "ColumnMemoryControllerKernel"
+Thu 19:40: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+Thu 19:40: WARNING: Unconnected elements in design 'ColumnMemoryControllerKernel'
+Thu 19:40: WARNING: details in : /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/ColumnMemoryControllerKernel_graph_warnings.txt
+Thu 19:40: 
+Thu 19:40: Compiling kernel "LinearCorrelationKernel"
+Thu 19:40: WARNING: Warning (UNCONNECTED_DESIGN_ELEMENT):
+Thu 19:40: WARNING: Unconnected elements in design 'LinearCorrelationKernel'
+Thu 19:40: WARNING: details in : /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/LinearCorrelationKernel_graph_warnings.txt
+Thu 19:40: WARNING: Warning (MULTIPLY_ADD_EXTRACTION):
+Thu 19:40: WARNING: MaxCompiler has detected and optimized one or more multiply add trees. These
+Thu 19:40: WARNING: optimizations reduce the amount of rounding that takes place. This may mean
+Thu 19:40: WARNING: that the output of this bitstream is not bit-identical to that of a similar
+Thu 19:40: WARNING: bitstream.
+Thu 19:40: WARNING: Warning (CONSTANT_ENCODING):
+Thu 19:40: WARNING: Precision loss occurred in some constant values.
+Thu 19:40: WARNING: For details see /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/scratch/LinearCorrelationKernel_constants_report.txt
+Thu 19:40: 
+Thu 19:40: Compiling kernel "CompressorBufferKernel"
+Thu 19:40: Running back-end simulation build (3 phases)
+Thu 19:40: (1/3) - Prepare MaxFile Data (GenerateMaxFileDataFile)
+Thu 19:40: (2/3) - Compile Simulation Modules (SimCompilePass)
+Thu 19:40: (3/3) - Generate MaxFile (AddSimObjectToMaxFilePass)
+Thu 19:40: MaxFile: /home/imilankovic/builds/07-05-15/BrainNetwork_p8_DFE_SIM_f150_ce3_VECTIS_w30/results/BrainNetwork.max (MD5Sum: adaf2e7f6d24ab6243d190241ab637f5)
+Thu 19:40: Build completed: Thu May 07 19:40:54 BST 2015 (took 53 secs)
+Thu 19:40: Executing command:
+Thu 19:40: cp /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/maxfiles/BrainNetwork.h /home/imilankovic/Downloads/Brain-Network/APP/RunRules/Simulation/include/BrainNetwork.h 
+Thu 19:40: Command output:
+Thu 19:40: Building: BrainNetwork.max file finished.
+Thu 19:40: Engine build finished.
+Thu 19:40: Compiling CPU Code.
+Thu 19:40: Run CPU project make files updating
+Thu 19:40: Executing command:
+Thu 19:40: java -jar /network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib/MaxIDE/projectAdmin.jar -u /home/imilankovic/Downloads/Brain-Network/APP Simulation 
+Thu 19:40: Command output:
+
+Thu 19:40: MaxCompiler Project Admin Tool Version 2014.2
+Thu 19:40:  Copyright Maxeler Technologies 2010 - 2014. All rights reserved.
+Thu 19:40: Handler version 1
+Thu 19:40: Updating RunRule dependent Makefiles for RunRule 'Simulation'
+Thu 19:40: Found makefiles: 1
+Thu 19:40: 	Updated: Simulation
+Thu 19:40: Run CPU make.
+Thu 19:40: make RUNRULE=Simulation 
+Thu 19:40: Command output:
+Thu 19:40: /network-raid/opt/maxcompiler-2015.1-post-ikon-merge/bin/sliccompile "../RunRules/Simulation/maxfiles/BrainNetwork.max" "../RunRules/Simulation/objects/slic_BrainNetwork.o"
+Thu 19:40: Processing maxfile for VECTIS_SIM from '../RunRules/Simulation/maxfiles/BrainNetwork.max'.
+Thu 19:40: gcc -std=gnu99 -Wall -Werror -fno-guess-branch-probability -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /network-raid/opt/maxcompiler-2015.1-post-ikon-merge/include/slic -DMAXFILE_INC="/home/imilankovic/Downloads/Brain-Network/APP/CPUCode/../RunRules/Simulation/maxfiles/BrainNetwork.max" -DSLIC_NO_DESTRUCTORS -c /network-raid/opt/maxcompiler-2015.1-post-ikon-merge/src/slicinterface/MaxFileInit.c -o slic_BrainNetwork.o 
+Thu 19:41: Copying .max file C object into '/home/imilankovic/Downloads/Brain-Network/APP/CPUCode/../RunRules/Simulation/objects'
+Thu 19:41: cc ../RunRules/Simulation/objects/slic_BrainNetwork.o  -L/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib -L/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread  -ldl -shared -o "../RunRules/Simulation/binaries/"libdfe.so""
+Thu 19:41: make -f Makefile ../RunRules/Simulation/binaries/compute_correlation
+Thu 19:41: make[1]: Entering directory `/home/imilankovic/Downloads/Brain-Network/APP/CPUCode'
+Thu 19:41: cc -g -O3 -Wall -Wextra -fmessage-length=0  -I '/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/include/slic' -I ../RunRules/Simulation/include -I. -I/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib/maxeleros-sim/include -I/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/include/slic -D_XOPEN_SOURCE=600  -std=c99 -DBUILDNAME_MAXFILE_1=BrainNetwork -DMAXFILE_1="BrainNetwork.max"  -o "../RunRules/Simulation/objects/main.o" -c "main.c"
+Thu 19:41: cc -g -O3 -Wall -Wextra -fmessage-length=0  -I '/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/include/slic' -I ../RunRules/Simulation/include -I. -I/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib/maxeleros-sim/include -I/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/include/slic -D_XOPEN_SOURCE=600  -std=c99 -DBUILDNAME_MAXFILE_1=BrainNetwork -DMAXFILE_1="BrainNetwork.max"  -MM -MP -MT "../RunRules/Simulation/objects/main.o" "main.c" > "../RunRules/Simulation/objects/main.d"
+Thu 19:41: cc ../RunRules/Simulation/objects/main.o ../RunRules/Simulation/objects/slic_BrainNetwork.o  -L/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib -L/network-raid/opt/maxcompiler-2015.1-post-ikon-merge/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread  -ldl -o "../RunRules/Simulation/binaries/compute_correlation"
+Thu 19:41: make[1]: Leaving directory `/home/imilankovic/Downloads/Brain-Network/APP/CPUCode'
+Thu 19:41: Build completed: Thu May 07 19:41:00 BST 2015
+
+

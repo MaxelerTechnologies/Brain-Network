@@ -26,7 +26,7 @@ Documentation of the project.
 
 License of the project.
 
-# Information to compile
+## Information to compile
 
 Ensure the environment variables below are correctly set:
   * `MAXELEROSDIR`
@@ -40,17 +40,17 @@ If would like to remove the distributed maxfiles before recompiling the applicat
 
     make RUNRULE="<ProfileName>" distclean
 
-# Makefile targets
+## Makefile targets
 
-## build  
+### build  
 
 Compiles the application
 
-## clean  
+### clean  
 
 Removes results of compilation from build directories  
 
-## distclean  
+### distclean  
 
 Removes all results of comakempilation from build directories, including all maxfiles
 

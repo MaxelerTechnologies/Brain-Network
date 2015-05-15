@@ -7,11 +7,11 @@
 </common>
 <maxFiles>
 <maxFile buildName="BrainNetwork" buildOrUseExisting="build">
-<runConfiguration askBeforeAutoBuild="true">
+<runConfiguration askBeforeAutoBuild="false">
 <mainClass>com.maxeler.publicdemos.brainnetwork.BrainNetworkBuilder</mainClass>
 <maxHeapSize>2</maxHeapSize>
 <programArgument argument="numPipes" value="12"/>
-<programArgument argument="frequency" value="200"/>
+<programArgument argument="frequency" value="150"/>
 <programArgument argument="enableECC" value="true"/>
 </runConfiguration>
 <selectEngineTarget enabled="false">VECTIS</selectEngineTarget>
@@ -19,7 +19,7 @@
 </maxFile>
 </maxFiles>
 <cpuCode targetType="executable">
-<libraryName>libdfe</libraryName>
+<libraryName/>
 <exeName>compute_correlation</exeName>
 <skin>
 <ancillaryReleaseInformation enabled="false">
@@ -28,7 +28,7 @@
 </skin>
 <arguments/>
 <remoteExecution enabled="false">
-<remoteMachineName>local</remoteMachineName>
+<remoteMachineName/>
 <scriptName/>
 </remoteExecution>
 <customDefinitions>USE_SLIC:=1</customDefinitions>

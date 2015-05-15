@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="BrainNetwork_EngineCode_run_script" default="all" basedir="../../EngineCode">
+<project name="Brain-Network_EngineCode_run_script" default="all" basedir="../../EngineCode">
     <property environment="env"/>
     <condition property="maxcompilerdirpath" value="${env.MAXCOMPILERJCP}">
         <isset property="env.MAXCOMPILERJCP"/>
@@ -30,7 +30,6 @@
                 <pathelement path="${env.ANT_MAXELER_INTERNAL_MAXIDE_JARS}"/>
                 <pathelement path="../RunRules/Simulation/dist/bin"/>
                 <pathelement path="${maxcompilerdirpath}"/>
-                <pathelement path="/network-raid/opt/maxq/maxq-ctl.jar"/>
                 <pathelement path="${EnvClassPath}"/>
             </classpath>
         </java>

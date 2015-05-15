@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>BrainNetwork_EngineCode</name>
+	<name>Brain-Network_EngineCode</name>
 	<comment></comment>
 	<manageMaxCompiler>true</manageMaxCompiler>
 	<manageMaxGenFD>false</manageMaxGenFD>
 	<manageMaxBlox>false</manageMaxBlox>
 	<maxelerVersion>1.0</maxelerVersion>
-	<maxelerBuildSystemVersion></maxelerBuildSystemVersion>
+	<maxelerBuildSystemVersion>2</maxelerBuildSystemVersion>
 	<projects>
 	</projects>
 	<buildSpec>

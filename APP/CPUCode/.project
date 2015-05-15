@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>BrainNetwork_CPUCode</name>
+	<name>Brain-Network_CPUCode</name>
 	<comment></comment>
 	<manageMaxCompiler>false</manageMaxCompiler>
 	<manageMaxGenFD>false</manageMaxGenFD>
 	<manageMaxBlox>false</manageMaxBlox>
 	<maxelerVersion></maxelerVersion>
-	<maxelerBuildSystemVersion></maxelerBuildSystemVersion>
+	<maxelerBuildSystemVersion>2</maxelerBuildSystemVersion>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -81,8 +81,8 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>com.maxeler.maxcompiler.core.MaxCompilerFragmentNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
-		<nature>com.maxeler.maxcompiler.core.MaxCompilerFragmentNature</nature>
 	</natures>
 </projectDescription>

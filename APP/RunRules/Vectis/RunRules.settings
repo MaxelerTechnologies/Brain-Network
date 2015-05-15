@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <buildProfile>
 <common>
 <boardModel type="VECTIS"/>
@@ -20,29 +20,34 @@
 </maxFile>
 </maxFiles>
 <cpuCode targetType="executable">
-<libraryName>libdfe</libraryName>
+<libraryName/>
 <exeName>compute_correlation</exeName>
-<arguments></arguments>
+<skin>
+<ancillaryReleaseInformation enabled="false">
+<dir name=""/>
+</ancillaryReleaseInformation>
+</skin>
+<arguments/>
 <remoteExecution enabled="false">
-<remoteMachineName>local</remoteMachineName>
-<scriptName>../RunRules/Vectis/binaries/run.sh</scriptName>
+<remoteMachineName/>
+<scriptName/>
 </remoteExecution>
 <customDefinitions>USE_SLIC:=1</customDefinitions>
 </cpuCode>
 <simulator>
 <deleteDRAM enabled="false"/>
-<maxDRAMSize enabled="false"></maxDRAMSize>
-<DRAMFile enabled="false"></DRAMFile>
-<socketName></socketName>
+<maxDRAMSize enabled="false"/>
+<DRAMFile enabled="false"/>
+<socketName>BrainNetworkVe</socketName>
 <startStopScript enabled="false"/>
 <numberOfDevices>1</numberOfDevices>
 <ethernetOneEnabled enabled="false"/>
-<ipAddressOne></ipAddressOne>
-<netmaskOne></netmaskOne>
-<pcapFileOne></pcapFileOne>
+<ipAddressOne/>
+<netmaskOne/>
+<pcapFileOne/>
 <ethernetTwoEnabled enabled="false"/>
-<ipAddressTwo></ipAddressTwo>
-<netmaskTwo></netmaskTwo>
-<pcapFileTwo></pcapFileTwo>
+<ipAddressTwo/>
+<netmaskTwo/>
+<pcapFileTwo/>
 </simulator>
 </buildProfile>

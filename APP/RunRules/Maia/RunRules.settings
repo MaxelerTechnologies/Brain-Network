@@ -19,7 +19,7 @@
 </maxFile>
 </maxFiles>
 <cpuCode targetType="executable">
-<libraryName>libdfe</libraryName>
+<libraryName/>
 <exeName>compute_correlation</exeName>
 <skin>
 <ancillaryReleaseInformation enabled="false">
@@ -28,8 +28,8 @@
 </skin>
 <arguments/>
 <remoteExecution enabled="false">
-<remoteMachineName>local</remoteMachineName>
-<scriptName>../RunRules/Maia/binaries/run.sh</scriptName>
+<remoteMachineName/>
+<scriptName/>
 </remoteExecution>
 <customDefinitions>USE_SLIC:=1</customDefinitions>
 </cpuCode>
@@ -37,7 +37,7 @@
 <deleteDRAM enabled="false"/>
 <maxDRAMSize enabled="false"/>
 <DRAMFile enabled="false"/>
-<socketName/>
+<socketName>BrainNetworkMa</socketName>
 <startStopScript enabled="false"/>
 <numberOfDevices>1</numberOfDevices>
 <ethernetOneEnabled enabled="false"/>

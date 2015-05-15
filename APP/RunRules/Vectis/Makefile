@@ -1,12 +1,27 @@
-CPU_CODE_DIR="../../CPUCode"
+ifndef MAXCOMPILERDIR
+  $(error The environment variable MAXCOMPILERDIR is not defined)
+endif
 
-# delegates any target to the CPU Code Makefile
-%:
-	make -C $(CPU_CODE_DIR) RUNRULE="Vectis" $@
+all: 
 
-# default target
-all:
-	make -C $(CPU_CODE_DIR) RUNRULE="Vectis"
+build: Makefile.rules
+	@java -jar "$(MAXCOMPILERDIR)/lib/MaxIDE/projectAdmin.jar" -u ../.. Vectis
+	$(MAKE) -f Makefile.rules build
 
-installer_no_dependencies:
-	echo "This target cannot be handled by this version of the makefile system" > /dev/stderr
+installer_no_dependencies: Makefile.rules
+	@java -jar "$(MAXCOMPILERDIR)/lib/MaxIDE/projectAdmin.jar" -u ../.. Vectis
+	$(MAKE) -f Makefile.rules installer_no_dependencies
+
+maxfiles/%.max include/%.h: Makefile.rules
+	@java -jar "$(MAXCOMPILERDIR)/lib/MaxIDE/projectAdmin.jar" -u ../.. Vectis
+	$(MAKE) -f Makefile.rules $@
+
+clean distclean startsim stopsim: Makefile.rules
+	$(MAKE) -f Makefile.rules $@
+
+Makefile.rules: Makefile.settings
+
+Makefile.settings: RunRules.settings
+	java -jar "$(MAXCOMPILERDIR)/lib/MaxIDE/projectAdmin.jar" -u ../.. Vectis
+
+.PHONY: all build clean installer_no_dependencies

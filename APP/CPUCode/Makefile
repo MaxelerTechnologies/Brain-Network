@@ -10,7 +10,7 @@
 #
 THIS_FILENAME:=Makefile
 PATH_TO_PROJECT_ROOT:=..
-.PHONY: all build clean distclean run startsim stopsim runsim
+.PHONY: all build build_gui clean distclean run startsim stopsim runsim
 
 
 # ======== DO NOT CHANGE ANYTHING IN THE FOLLOWING SECTION ========
@@ -33,6 +33,10 @@ PROFILE_QUOTE:=$(subst $(space),\ ,$(RUNRULE))
 PROFILE_DIR:=$(PROJECTROOT)/RunRules/$(PROFILE_QUOTE)
 
 include $(PROFILE_DIR)/Makefile.include
+
+# set the GUI folder path
+GUIDIR:=$(PROJECTROOT)/CPUCode/gui
+GUIJAR:=$(GUIDIR)/brain_network.jar
 
 
 # ===============  CHANGE  BELOW  ===============
@@ -175,7 +179,7 @@ override LDFLAGS+=$(MAXELER_LINKER_FLAGS) -ldl
 
 # ==== (VI) Build Rules ====
 # The default target will only build the application. (Anything else will confuse MaxIDE..)
-all: build
+all: build build_gui
 
 
 help:
@@ -225,6 +229,9 @@ help:
 build:| $(MAXDIR) $(OBJDIR) $(BINDIR) $(APP_OBJECT_DIRS) $(BINDIR)/$(MAXFILE_SO)
 	$(MAKE) -f $(THIS_FILENAME) $(BINDIR)/$(EXE_SO_NAME)
 
+# GUI is a Java application that gets build by ant
+build_gui: $(GUIJAR)
+
 
 # (2) Link all the objects: do not forget the $MAXFILEOBJECTS!
 #     Notice: We don't use $^ here because of potential spaces in prereqs.
@@ -264,11 +271,16 @@ $(OBJDIR)/%.o : %.c $(MAXFILEOBJECTS)
 
 endif
 
+# Build the GUI Java application
+$(GUIJAR):
+	@cd $(GUIDIR); ant build-jar; cd -
+
 
 
 # (4) Clean will remove all objects and the application
 clean:
 	$(RM) -r $(OBJDIR)/* $(BINDIR)/$(EXE_SO_NAME) $(BINDIR)/$(MAXFILE_SO)
+	cd $(GUIDIR); ant clean; cd -
 
 # Distclean will also remove all maxfiles - use with care!
 distclean: clean
@@ -277,7 +289,7 @@ distclean: clean
 
 
 # (5) Generic run target
-run: build
+run: build build_gui
 	cd $(PATH_TO_PROJECT_ROOT)/CPUCode && $(RUNENV) "$(realpath $(BINDIR)/$(EXE_SO_NAME))" $(RUNARGS)
 
 # Generic runsim target (starts + stops simulated system automatically)

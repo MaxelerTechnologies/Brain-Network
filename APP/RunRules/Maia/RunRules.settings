@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <buildProfile>
 <common>
 <boardModel type="MAIA"/>
@@ -19,34 +19,29 @@
 </maxFile>
 </maxFiles>
 <cpuCode targetType="executable">
-<libraryName/>
+<libraryName>libdfe</libraryName>
 <exeName>compute_correlation</exeName>
-<skin>
-<ancillaryReleaseInformation enabled="false">
-<dir name=""/>
-</ancillaryReleaseInformation>
-</skin>
-<arguments/>
+<arguments></arguments>
 <remoteExecution enabled="false">
-<remoteMachineName/>
-<scriptName/>
+<remoteMachineName>local</remoteMachineName>
+<scriptName>../RunRules/Maia/binaries/run.sh</scriptName>
 </remoteExecution>
 <customDefinitions>USE_SLIC:=1</customDefinitions>
 </cpuCode>
 <simulator>
 <deleteDRAM enabled="false"/>
-<maxDRAMSize enabled="false"/>
-<DRAMFile enabled="false"/>
-<socketName>BrainNetworkMa</socketName>
+<maxDRAMSize enabled="false"></maxDRAMSize>
+<DRAMFile enabled="false"></DRAMFile>
+<socketName></socketName>
 <startStopScript enabled="false"/>
 <numberOfDevices>1</numberOfDevices>
 <ethernetOneEnabled enabled="false"/>
-<ipAddressOne/>
-<netmaskOne/>
-<pcapFileOne/>
+<ipAddressOne></ipAddressOne>
+<netmaskOne></netmaskOne>
+<pcapFileOne></pcapFileOne>
 <ethernetTwoEnabled enabled="false"/>
-<ipAddressTwo/>
-<netmaskTwo/>
-<pcapFileTwo/>
+<ipAddressTwo></ipAddressTwo>
+<netmaskTwo></netmaskTwo>
+<pcapFileTwo></pcapFileTwo>
 </simulator>
 </buildProfile>

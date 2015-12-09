@@ -10,23 +10,34 @@ stages:
 - make-sim
 - make-dfe
 
-before-script:
-  - yum install 
-
-
 make-sim-Brain-Network:
   image: $MAXCOMPILER_SIM_IMAGE
   script:
-  - make -C APP/CPUCode RUNRULE='Simulation' distclean build
-  - make -C APP/CPUCode RUNRULE='Simulation' runsim
+  - make -C APP/CPUCode RUNRULE='Simulation'
   stage: make-sim
   tags:
   - maxcompiler-sim
 
-make-dfe-Brain-Network:
+make-Coria-Brain-Network:
   image: $MAXCOMPILER_DFE_IMAGE
   script:
-  - make -C APP/CPUCode RUNRULE='Maia' distclean build
+  - make -C APP/CPUCode RUNRULE='Coria'
+  stage: make-dfe
+  tags:
+  - maxcompiler-dfe
+
+make-Galava-Brain-Network:
+  image: $MAXCOMPILER_DFE_IMAGE
+  script:
+  - make -C APP/CPUCode RUNRULE='Galava'
+  stage: make-dfe
+  tags:
+  - maxcompiler-dfe
+
+make-Maia-Brain-Network:
+  image: $MAXCOMPILER_DFE_IMAGE
+  script:
+  - make -C APP/CPUCode RUNRULE='Maia'
   stage: make-dfe
   tags:
   - maxcompiler-dfe

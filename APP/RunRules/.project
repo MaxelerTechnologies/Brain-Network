@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Brain-Network_RunRules</name>
+	<name>BrainNetwork_RunRules</name>
 	<comment>Simulation</comment>
 	<manageMaxCompiler>false</manageMaxCompiler>
 	<manageMaxGenFD>false</manageMaxGenFD>
 	<manageMaxBlox>false</manageMaxBlox>
 	<maxelerVersion></maxelerVersion>
-	<maxelerBuildSystemVersion>2</maxelerBuildSystemVersion>
+	<maxelerBuildSystemVersion></maxelerBuildSystemVersion>
 	<projects>
 	</projects>
 	<buildSpec>
